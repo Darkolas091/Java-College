@@ -1,0 +1,21 @@
+do {
+            try {
+                //unosPrint
+                //unos
+                    if ()
+                    {
+                        throw new InputMismatchException("Neispravan unos!");
+                    }
+                    valid = true;
+                }
+            catch (InputMismatchException e)
+            {
+                System.out.println("Neispravan unos!");
+                logger.error("Krivi unos", e);
+                valid = false;
+            }
+            finally {
+                unos.nextLine();
+            }
+        }
+        while (!valid);
